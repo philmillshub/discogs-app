@@ -1,0 +1,6 @@
+development:
+  adapter: null
+test:
+  adapter: null
+production:
+  adapter: null
