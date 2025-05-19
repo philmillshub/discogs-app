@@ -20,15 +20,7 @@ class RecordsController < ApplicationController
   private
   
   def get_random_record(discogs)
-    # This is a placeholder - you'll need to implement the actual logic
-    # to get a random record from Discogs
-    {
-      title: "Sample Record",
-      artist: "Sample Artist",
-      year: "2024",
-      label: "Sample Label",
-      artwork_url: "https://example.com/artwork.jpg"
-    }
+    SelectRandomDiscog.call
   end
 end
 
