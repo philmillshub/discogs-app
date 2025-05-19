@@ -7,7 +7,6 @@ class RecordsController < ApplicationController
     
     # Get a random record (you'll need to implement this logic)
     record = OpenStruct.new(get_random_record(discogs))
-    binding.pry
     
     # Format the response for Siri
     response = {
