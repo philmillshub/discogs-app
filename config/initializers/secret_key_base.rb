@@ -1,1 +1,0 @@
-Rails.application.credentials.secret_key_base = ENV['SECRET_KEY_BASE'] if ENV['SECRET_KEY_BASE'].present?
