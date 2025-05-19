@@ -20,9 +20,3 @@ test:
 production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
-
-  # Add these lines for Action Cable
-  queue:
-    url: <%= ENV['DATABASE_URL'] %>
-  cable:
-    url: <%= ENV['DATABASE_URL'] %>
