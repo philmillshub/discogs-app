@@ -4,6 +4,7 @@ require_relative "boot"
 require "active_model/railtie"
 require "action_controller/railtie"
 require "action_view/railtie"
+require "active_storage/engine"
 require "rails/test_unit/railtie"
 
 # Require the gems listed in Gemfile, including any gems
