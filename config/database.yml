@@ -1,15 +1,22 @@
-development:
+default: &default
   adapter: postgresql
   encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
   database: discogs_app_development
-  username: philthegr81
-  password: maCh1ne1975
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
   host: localhost
 
 test:
-  adapter: postgresql
-  encoding: unicode
+  <<: *default
   database: discogs_app_test
-  username: philthegr81
-  password: maCh1ne1975
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
   host: localhost
+
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
