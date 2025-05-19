@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: discogs_app_development
+  username: philthegr81
+  password: maCh1ne1975
+  host: localhost
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: discogs_app_test
+  username: philthegr81
+  password: maCh1ne1975
+  host: localhost

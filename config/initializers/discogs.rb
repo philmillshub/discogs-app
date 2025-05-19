@@ -1,0 +1,2 @@
+require 'discogs-wrapper'
+
